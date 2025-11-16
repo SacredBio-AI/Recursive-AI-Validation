@@ -1,0 +1,145 @@
+{
+  "summary": {
+    "mean_growth": 355.6128204606807,
+    "std_growth": 105.38208536832039,
+    "min_growth": 223.69785110919148,
+    "max_growth": 481.6278318971128
+  },
+  "individual_results": [
+    {
+      "test_info": {
+        "system": "APEX_3_0",
+        "version": "3.0.1",
+        "seed": 42,
+        "timestamp": "2025-11-13T01:59:59.504666"
+      },
+      "performance": {
+        "initial_rei": 3.0,
+        "final_rei": 9.710935533275745,
+        "growth_percent": 223.69785110919148,
+        "status": "PASS"
+      },
+      "antifragile_analysis": {
+        "recovery_reis": [
+          11.48977503559585,
+          11.578886736331754,
+          9.863421459683813,
+          9.710889541834316,
+          9.710934380558072,
+          9.71093550050351,
+          9.710935532608678,
+          9.710935533262917,
+          9.71093553327552,
+          9.710935533275745
+        ],
+        "pattern": "non-monotonic",
+        "is_antifragile": false
+      },
+      "parameters": {
+        "correction_quality": {
+          "initial": 1.0,
+          "final": 2.204338412437712
+        },
+        "coherence_baseline": {
+          "initial": 1.0,
+          "final": 1.7008025476302984
+        },
+        "total_learning": 40.63794204977841
+      },
+      "safety": {
+        "value_drift": 0.4961274680508751,
+        "coherence_increased": true
+      }
+    },
+    {
+      "test_info": {
+        "system": "APEX_3_0",
+        "version": "3.0.1",
+        "seed": 123,
+        "timestamp": "2025-11-13T01:59:59.620449"
+      },
+      "performance": {
+        "initial_rei": 3.0,
+        "final_rei": 17.448834956913384,
+        "growth_percent": 481.6278318971128,
+        "status": "PASS"
+      },
+      "antifragile_analysis": {
+        "recovery_reis": [
+          10.75859515990569,
+          24.200814536738836,
+          57.85517615955937,
+          56.893658754685006,
+          45.8168402559009,
+          36.84766182159184,
+          29.894540826110983,
+          24.50978994412574,
+          20.339724330347405,
+          17.448834956913384
+        ],
+        "pattern": "non-monotonic",
+        "is_antifragile": false
+      },
+      "parameters": {
+        "correction_quality": {
+          "initial": 1.0,
+          "final": 4.115011389634362
+        },
+        "coherence_baseline": {
+          "initial": 1.0,
+          "final": 1.8966798270440886
+        },
+        "total_learning": 103.1673696228262
+      },
+      "safety": {
+        "value_drift": 0.5702111999981588,
+        "coherence_increased": true
+      }
+    },
+    {
+      "test_info": {
+        "system": "APEX_3_0",
+        "version": "3.0.1",
+        "seed": 456,
+        "timestamp": "2025-11-13T01:59:59.723184"
+      },
+      "performance": {
+        "initial_rei": 3.0,
+        "final_rei": 13.84538335127214,
+        "growth_percent": 361.512778375738,
+        "status": "PASS"
+      },
+      "antifragile_analysis": {
+        "recovery_reis": [
+          10.874990004398137,
+          14.306195173878088,
+          24.599022240192465,
+          23.980885342619388,
+          19.822220402769855,
+          16.455531134271997,
+          13.845382328054628,
+          13.84538332839669,
+          13.845383350868916,
+          13.84538335127214
+        ],
+        "pattern": "non-monotonic",
+        "is_antifragile": false
+      },
+      "parameters": {
+        "correction_quality": {
+          "initial": 1.0,
+          "final": 3.1489819544306052
+        },
+        "coherence_baseline": {
+          "initial": 1.0,
+          "final": 1.834584766307934
+        },
+        "total_learning": 76.1525753431235
+      },
+      "safety": {
+        "value_drift": 0.5696857880830791,
+        "coherence_increased": true
+      }
+    }
+  ]
+}

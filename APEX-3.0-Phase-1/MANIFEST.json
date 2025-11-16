@@ -1,0 +1,120 @@
+{
+  "package": "APEX_3_0_CORRECTED_FINAL",
+  "version": "3.0.1-corrected",
+  "build_date": "2025-11-13",
+  "description": "APEX 3.0 antifragile alignment system - corrected final distribution with all documentation verified against actual test results",
+  "platform": "Windows 64-bit, Python 3.12.x",
+  "files": {
+    "apex_3_0_core.cp312-win_amd64.pyd": {
+      "size_bytes": 176896,
+      "sha256": "95380e4f932d2b122e43aa4982d2b9495fe9a6d4092619792f29c07cb48549d6",
+      "description": "Core APEX 3.0 binary (compiled)",
+      "required": true,
+      "changed": false
+    },
+    "apex_runner.py": {
+      "size_bytes": 4918,
+      "sha256": "84ae97e87c66e3cb7b5e4992d1a9d17afcc548161bf0ca24b3a8517081801033",
+      "description": "Complete test runner with multi-seed support",
+      "required": true,
+      "changed": false
+    },
+    "phase_1f_cython_results.json": {
+      "size_bytes": 3549,
+      "sha256": "d31d5e6abe874cf879fa42897f99cf75675be4b14fd52c253abd28cf13e82c1d",
+      "description": "Phase 1f validation results (118.87% mean growth)",
+      "required": false,
+      "changed": false
+    },
+    "phase_1g_cython_results.json": {
+      "size_bytes": 3848,
+      "sha256": "5ff571c5c3603b99e40005372affb3bf378190d11e0942a135786c697df63db8",
+      "description": "Phase 1g validation results (355.61% mean growth)",
+      "required": false,
+      "changed": false
+    },
+    "phase_1h_cython_results.json": {
+      "size_bytes": 3848,
+      "sha256": "7e13767c060b7df88a6458e0ff4d15b5635f7d685dddd297a5f43d0015b1b0b7",
+      "description": "Phase 1h validation results (248.40% mean growth)",
+      "required": false,
+      "changed": false
+    },
+    "requirements.txt": {
+      "size_bytes": 13,
+      "sha256": "9e4c8e18f2c59f952580a465882b51ae72bf80ed6c4fe9284d0aca0af74912aa",
+      "description": "Python dependencies",
+      "required": true,
+      "changed": false
+    },
+    "README.md": {
+      "size_bytes": 537,
+      "sha256": "b48b3fbb918f09ff0ceef17913848b5a46025b0d5a480051310aeed9baf4a172",
+      "description": "Basic package information",
+      "required": false,
+      "changed": false
+    },
+    "RUN_ME_FIRST.bat": {
+      "size_bytes": 1845,
+      "sha256": "1c425fc8925fde31ab43a7c6e471ee04a94e145d83ab2e7bad3cb881b03af344",
+      "description": "One-click verification script",
+      "required": false,
+      "changed": true
+    },
+    "QUICK_START.txt": {
+      "size_bytes": 8364,
+      "sha256": "ad0ae33f88e42d96554aa0b7a946605673785a117a92ec94a5974ed19e442690",
+      "description": "Complete usage guide (corrected)",
+      "required": true,
+      "changed": true
+    },
+    "EMAIL_TEMPLATE.txt": {
+      "size_bytes": 4854,
+      "sha256": "34794b86df968560805e9d0619cf6ecda466440758059830581572d12f846bf0",
+      "description": "Distribution email template (corrected)",
+      "required": false,
+      "changed": true
+    },
+    "COMPLETE_VERIFICATION.txt": {
+      "size_bytes": 13609,
+      "sha256": "609e9e004d05f47dab8fec4a0d35f1a2b62b89e041917b581f093bc73d22919f",
+      "description": "Master verification document (corrected)",
+      "required": true,
+      "changed": true
+    }
+  },
+  "corrections": {
+    "phase_1g_mean_growth": {
+      "incorrect_value": "356.89%",
+      "correct_value": "355.61%",
+      "reason": "Documentation typo - actual test data was always correct",
+      "files_corrected": [
+        "QUICK_START.txt",
+        "EMAIL_TEMPLATE.txt",
+        "COMPLETE_VERIFICATION.txt"
+      ]
+    }
+  },
+  "validation": {
+    "phase_1f": {
+      "mean_growth": 118.87,
+      "seeds": [42, 123, 456],
+      "status": "PASS"
+    },
+    "phase_1g": {
+      "mean_growth": 355.61,
+      "seeds": [42, 123, 456],
+      "status": "PASS"
+    },
+    "phase_1h": {
+      "mean_growth": 248.40,
+      "seeds": [42, 123, 456],
+      "status": "PASS"
+    }
+  },
+  "requirements": {
+    "os": "Windows 10/11 (64-bit)",
+    "python": "3.12.x (exactly)",
+    "dependencies": ["numpy>=2.0.0"]
+  }
+}
